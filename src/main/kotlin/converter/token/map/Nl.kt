@@ -1,10 +1,10 @@
-package converter.token.map;
+package converter.token.map
 
 import converter.token.Token
 import converter.token.TokenMap
 import converter.token.Type
 
-class Nl: TokenMap {
+class Nl : TokenMap {
     override fun get(): Map<String, Token> {
         return mapOf(
             "en" to Token(0, Type.IGNORE),

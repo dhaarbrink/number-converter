@@ -7,7 +7,7 @@ import java.text.DecimalFormat
 import java.text.DecimalFormatSymbols
 import java.util.*
 
-class NumberConverter (val map: TokenMap, val input: String) {
+class NumberConverter(val map: TokenMap, val input: String) {
     private val tokenStream: MutableList<Token> = mutableListOf()
 
     init {
@@ -19,7 +19,7 @@ class NumberConverter (val map: TokenMap, val input: String) {
         var result = 0L
 
         tokenStream.forEach {
-            when(it.type) {
+            when (it.type) {
                 Type.IGNORE -> {}
                 Type.TERMINAL -> temp += it.value
                 Type.MULTIPLIER -> {

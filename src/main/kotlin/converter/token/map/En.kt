@@ -1,10 +1,10 @@
-package converter.token.map;
+package converter.token.map
 
 import converter.token.Token
 import converter.token.TokenMap
 import converter.token.Type
 
-class En: TokenMap {
+class En : TokenMap {
     override fun get(): Map<String, Token> {
         return mapOf(
             "and" to Token(0, Type.IGNORE),
@@ -40,5 +40,5 @@ class En: TokenMap {
             "million" to Token(1_000_000, Type.MULTIPLIER, true),
             "billion" to Token(1_000_000_000, Type.MULTIPLIER, true),
         )
-}
+    }
 }
